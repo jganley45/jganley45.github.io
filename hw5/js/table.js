@@ -1,3 +1,4 @@
+//joe ganley university of massachusetts lowell
 var num1;
 var num2;
 var num3;
@@ -11,6 +12,7 @@ var _num4;
 var list1 = [];
 var list2 = [];
 
+//checks for errors
 function checker (x) {
   if ((x < -50 || x > 50) || (isNaN(x) == true))  {
   //  alert("Enter a NUMBER in between -50 and 50");
@@ -20,6 +22,8 @@ function checker (x) {
   return false;
   }
 }
+
+//clears the table
 function clear() {
   var myTable = document.getElementById('mult_table');
   for (var i = 0; i < 5; i++) {
@@ -30,6 +34,7 @@ function clear() {
       }
 
 
+// gets x axis
 function getNumH() {
 
   num1 = document.forms["frm1"]["num1"].value;
@@ -70,6 +75,7 @@ function getNumH() {
   return true;
 }
 
+//gets y axis
 function getNumV() {
 
 
@@ -108,6 +114,8 @@ function getNumV() {
  return true;
 }
 
+
+//actually create the table
 function computeTable() {
   document.getElementById("error").textContent=" ";
   if(!getNumH()) {
