@@ -1,0 +1,119 @@
+<!--Joe Ganley Umass Lowell 2020  joseph_ganley@student.uml.edu -->
+
+ <!doctype html>
+<html lang="en">
+<head>
+
+
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+  <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <meta charset="utf-8">
+
+  <title>table</title>
+
+
+  <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+    <script src="js/table.js"></script>
+
+
+
+
+   </head>
+
+   <body>
+      <div id = "tabs-1">
+         <ul>
+            <li><a href = "#tabs-2">Tab 1</a></li>
+            <li><a href = "#tabs-3">Tab 2</a></li>
+            <li><a href = "#tabs-4">Tab 3</a></li>
+         </ul>
+         <div id = "tabs-2"></div>
+         <div id = "tabs-3"> </div>
+         <div id = "tabs-4"></div>
+      </div>
+
+<button id="removeTabs" title="Click to Remove Active Tab" onclick="removeTab" class="ui-button ui-widget ui-corner-all">x Remove Tab</button>
+ <button id="showDialog" class="ui-button ui-widget ui-corner-all">+ Add Tab</button>  
+<div id="inputs">
+  <div id="form1">
+    <h1> X-axis </h1>
+  <form id="frm1" action="/action_page.php">
+      Number 1: <input type="text" id="num1" name="num1"><br>
+      <div id = "mySlider1"></div>
+      Number 2: <input type="text" id="num2" name="num2"><br>
+      <div id = "mySlider2"></div>
+      Number 3: <input type="text" id="num3" name="num3"><br>
+      <div id = "mySlider3"></div>
+      Number 4: <input type="text" id="num4" name="num4"><br><br>
+      <div id = "mySlider4"></div>
+
+    </form>
+  </div>
+  <div id="form2">
+    <h1> Y-axis </h1>
+    <form id="frm2" action="/action_page.php">
+      Number 1: <input type="text" id="_num1" name="_num1"><br>
+      <div id = "mySlider5"></div>
+      Number 2: <input type="text" id="_num2" name="_num2"><br>
+      <div id = "mySlider6"></div>
+      Number 3: <input type="text" id="_num3" name="_num3"><br>
+      <div id = "mySlider7"></div>
+      Number 4: <input type="text" id="_num4" name="_num4"><br><br>
+      <div id = "mySlider8"></div>
+    </form>
+  </div>
+</div>
+<div id="error">
+</div>
+  <input type="button" id="submit-button" type="submit" value="Submit">
+  <input type="button" onclick="computeTable()" value="Compute Table">
+
+<div id="table">
+    <h1>Multiplication Table</h1>
+    <table id="mult_table">
+      <tr>
+        <td></td>
+        <td id="x1"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+</body>
+</html>
